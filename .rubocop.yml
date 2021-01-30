@@ -1,0 +1,59 @@
+# inherit_from: .rubocop_todo.yml
+require: rubocop-rails
+
+Style/Documentation:
+  Include:
+    - app/models/**/*
+    - lib/**/*
+    
+Layout/Space:
+  Enabled: false
+    
+Layout/Tab:
+  EnforcedStyle: tabs
+
+Layout/LineLength:
+  Max: 120
+  Exclude:
+    - config/**/*
+
+Metrics/MethodLength:
+  Exclude:
+    - config/**/*
+    - db/migrate/**/*
+
+Metrics/BlockLength:
+  Exclude:
+    - db/migrate/**/*
+    - config/**/*
+
+Metrics/AbcSize:
+  Exclude:
+    - db/migrate/**/*
+
+Layout/EmptyLinesAroundAttributeAccessor: 
+  Enabled: true 
+Layout/SpaceAroundMethodCallOperator: 
+  Enabled: true 
+Lint/RaiseException:
+  Enabled: true
+Lint/StructNewOverride:
+  Enabled: true
+Style/ExponentialNotation:
+  Enabled: true
+Style/HashEachMethods:
+  Enabled: true
+Style/HashTransformKeys:
+  Enabled: true
+Style/HashTransformValues:
+  Enabled: true
+Style/SlicingWithRange:
+  Enabled: true
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: false
+Lint/MixedRegexpCaptureTypes:
+  Enabled: false
+Style/RedundantRegexpCharacterClass:
+  Enabled: false
+Style/RedundantRegexpEscape:
+  Enabled: false

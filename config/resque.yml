@@ -1,0 +1,4 @@
+development: <%= ENV['REDIS_HOST'] %>:<%= ENV['REDIS_PORT'] %>
+test: <%= ENV['REDIS_HOST'] %>:<%= ENV['REDIS_PORT'] %>
+staging: <%= ENV['REDIS_HOST'] %>:<%= ENV['REDIS_PORT'] %>
+production: <%= ENV['REDIS_HOST'] %>:<%= ENV['REDIS_PORT'] %>
